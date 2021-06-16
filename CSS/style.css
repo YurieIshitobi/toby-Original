@@ -1,0 +1,812 @@
+/*スマホ　@media screen and (max-width: 480px)　{ }
+PC @media screen and (min-width: 481px)　{ }
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: "游ゴシック体";
+  color: #171918;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 480px){
+body{
+  font-family: "游ゴシック体";
+  color: #171918;
+  font-size: 12px;
+  text-align: left;
+  }}
+
+.span1{
+  color: #f2a12c;
+}
+
+
+/* ===== ヘッダーのスタイル ===== */
+header{
+    background-color:#53bba2;
+    width:100%;
+    height: 80px;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    z-index:100;
+}
+
+@media screen and (max-width: 480px){
+  header{
+    background-color:#53bba2;
+    width:100%;
+    height: 80px;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    z-index:100;
+}}
+
+
+/*ナビの箱*/
+nav{
+    margin-left: auto;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*リスト全体*/
+nav ul{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    list-style: none;
+}
+
+/* １つ１つのリスト */
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+/*リンク*/
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+    color: #ffcc11;
+  }
+
+  /* メニュー間の線 */
+.container span{
+  height: 25px;
+  width: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 480px){ 
+.container{
+  display:none;
+}}
+
+  /* メニューのロゴ */
+@media screen and (min-width: 481px){ 
+.top-logo{
+    width: 200px;
+    padding:50px;
+}}
+
+@media screen and (max-width: 480px){ 
+  .top-logo{
+      width: 100px;
+      padding:20px;
+  }}
+  
+
+/* FV背景画像 */
+@media screen and (min-width: 481px){ 
+.top-image{
+    background-image: url(/images/top-image.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center 50%;
+}}
+
+@media screen and (max-width: 800px){
+  .top-image{
+    background-image: url(/images/FV-sp.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center 50%;
+}}
+
+/* FVロゴ */
+@media screen and (min-width: 481px){ 
+.top-image img{
+  margin: 0px auto;
+  padding: 165px 0 70px;
+  display: block;
+  height: 200px;
+  text-align: center;
+}}
+
+@media screen and (max-width: 800px){
+  .top-image img{
+    margin: 0px auto;
+    padding: 145px 0 70px;
+    display: block;
+    height: 100px;
+    text-align: center;
+  }}
+
+.top-image h1{
+  font-size: 20px;
+  text-align: center;
+  margin-top:-85px ;
+  font-family: "游ゴシック体";
+  color: #171918;
+}
+
+@media screen and (max-width: 800px){
+  .top-image h1{
+    font-size: 13px;
+    text-align: center;
+    margin-top:-85px ;
+    font-family: "游ゴシック体";
+    color: #171918;
+  }}
+
+
+/* ===== 文字の設定 ==== */
+/* sub-titleのデザイン */
+  .sub-title1 {
+    position: relative;
+    color: #171918;
+    font-size: 32px;
+    text-align: center;
+    font-family: "まるがめ本丸ゴシック-R";
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title1 {
+      position: relative;
+      color: #171918;
+      font-size: 23px;
+      text-align: center;
+      font-family: "まるがめ本丸ゴシック-R";
+    }
+  }
+
+  .sub-title2 {
+    position: relative;
+    color: #171918;
+    font-size: 32px;
+    text-align: center;
+    font-family: "まるがめ本丸ゴシック-R";
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title2 {
+      position: relative;
+      color: #171918;
+      font-size: 23px;
+      text-align: center;
+      font-family: "まるがめ本丸ゴシック-R";
+    }
+  }
+
+  .sub-title3 {
+    position: relative;
+    color: #171918;
+    font-size: 32px;
+    text-align: center;
+    font-family: "まるがめ本丸ゴシック-R";
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title3 {
+      position: relative;
+      color: #171918;
+      font-size: 23px;
+      text-align: center;
+      font-family: "まるがめ本丸ゴシック-R";
+    }
+  }
+
+  .sub-title4 {
+    position: relative;
+    color: #171918;
+    font-size: 32px;
+    text-align: center;
+    font-family: "まるがめ本丸ゴシック-R";
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title4 {
+      position: relative;
+      color: #171918;
+      font-size: 23px;
+      text-align: center;
+      font-family: "まるがめ本丸ゴシック-R";
+    }
+  }
+
+  .sub-title5 {
+    position: relative;
+    color: #171918;
+    font-size: 32px;
+    text-align: center;
+    font-family: "まるがめ本丸ゴシック-R";
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title5 {
+      position: relative;
+      color: #171918;
+      font-size: 23px;
+      text-align: center;
+      font-family: "まるがめ本丸ゴシック-R";
+    }
+  }
+
+  /* sub-titleの下線  ※後で各項目に分けること！*/
+  .sub-title1:before { 
+    display: inline-block;
+    position: absolute;
+    width: 260px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #53bba2;
+    content: '';
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title1:before { 
+      display: inline-block;
+      position: absolute;
+      width: 200px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #53bba2;
+      content: '';
+      bottom: -4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+
+  .sub-title2:before { 
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #53bba2;
+    content: '';
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title2:before { 
+      display: inline-block;
+      position: absolute;
+      width: 220px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #53bba2;
+      content: '';
+      bottom: -4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+
+  .sub-title3:before { 
+    display: inline-block;
+    position: absolute;
+    width: 195px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #53bba2;
+    content: '';
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title3:before { 
+      display: inline-block;
+      position: absolute;
+      width: 150px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #53bba2;
+      content: '';
+      bottom: -4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+
+  .sub-title4:before { 
+    display: inline-block;
+    position: absolute;
+    width: 360px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #53bba2;
+    content: '';
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title4:before { 
+      display: inline-block;
+      position: absolute;
+      width: 270px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #53bba2;
+      content: '';
+      bottom: -4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+
+  .sub-title5:before { 
+    display: inline-block;
+    position: absolute;
+    width: 325px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #53bba2;
+    content: '';
+    bottom: 46px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 480px){
+    .sub-title5:before { 
+      display: inline-block;
+      position: absolute;
+      width: 250px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #53bba2;
+      content: '';
+      bottom: -4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* ===== セクション1 ==== */
+  /* バック背景 */
+  .section1{
+    padding: 100px;
+    background-color: #e3f2f0;
+    height: 100%;
+  }
+
+  /* 本文 */
+  /*※後で一つの式に統一する！！*/
+  .section1 p{
+      padding-top:50px ;
+      text-align: center;
+      letter-spacing: 8px;
+      line-height: 30px;
+  }
+
+  /* ボタン */
+  .section1 a{
+    width:250px;
+    font-size:15px;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    margin-top:80px;
+    padding:15px 15px 15px;
+    color:#fff;
+    background-color:#53bba2;
+    border-radius: 23px;
+}
+
+.section1 div{
+  display: flex;
+  justify-content:center;
+  margin-top: -20px;
+}
+
+
+/* 斜めセクション */
+
+.section1{
+  position: relative;
+}
+.section1::before {
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  border-width: 65px 100vw 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+/* ===== セクション2 ==== */
+/* 背景 */
+.section2 {
+  padding: 100px;
+  background-color: #fff;
+  height: 100%;
+}
+
+/* 段落 */
+.section2 p{
+  padding-top:50px ;
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+.swiper-container{
+  width: 100%;
+}
+
+.QA-box{
+    width: 90%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 40px;
+    border: solid 1px #000;
+    padding: 60px;
+    text-align: center;
+}
+
+.QA-subtitle-img{
+  text-align: center;
+}
+
+.QA-title-box{
+  justify-content: right;  /* 水平方向の中央寄せ */
+  align-items: center;      /* 垂直方向の中央寄せ */
+  flex-wrap: wrap;
+}
+
+.QA-Que{
+  font-size: 28px;
+  font-family: "まるがめ本丸ゴシック-R";
+  text-align: center;
+  padding-top: 30px;
+}
+
+.demo4{
+  text-align: center;
+}
+
+.QA-Ans-img2{
+  margin: 50px;
+}
+
+
+.QA-Ans-txt{
+  margin-top: 30px;
+}
+
+.QA-Ans{
+  font-size: 25px;
+  font-family: "まるがめ本丸ゴシック-R";
+}
+
+.QA-Ans-p{
+  font-size: 15px;
+  font-family: "游ゴシック体";
+  text-align: center;
+}
+
+.demo{
+  background: linear-gradient(transparent 60%, #ceefe6 40%);
+}
+
+.span2{
+  color: #f2a12c;
+  font-size: 25px;
+}
+
+.span3{
+  color:#f2a12c;
+  font-size: 30px;
+}
+
+/* ===== セクション3 ==== */
+/* 斜めセクション */
+.section2 {
+  position: relative;
+}
+.section2::before {
+  border-color: transparent #e3f2f0 transparent transparent;
+  border-style: solid;
+  border-width: 65px 100vw 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+/* セクション背景 */
+.section3 {
+  padding: 100px;
+  background-color: #e3f2f0;
+  height: 100%;
+}
+
+/* 段落 */ 
+.section3 p{
+  padding-top:50px ;
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+/* カード*/
+.card-container {
+  display: grid; /* カードの横並び */
+  gap: 100px 120px; /* カード同士の隙間 縦方向 横方向 */
+  margin: 110px auto 0;
+  text-align: center; /* カード内の中央寄せ */
+  padding-top: 180px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.card-item {
+  width:280px;
+  height:280px;
+  background:#fff;
+  border-radius:30px;
+  position: relative;
+}
+
+.card-img {
+  width:240px;  
+  height:240px;
+  padding: 40px 0px;
+}
+
+/*  吹き出し */
+.comment{
+  width: 100px;
+  position: absolute;
+  top:-7%;
+  right: -10%;
+}
+
+/* ボタン */
+.section3 a{
+  width:250px;
+    font-size:15px;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    margin-top:80px;
+    padding:15px 15px 15px;
+    color:#fff;
+    background-color:#53bba2;
+    border-radius: 23px;
+  }
+
+.section3 div{
+  display: flex;
+  justify-content:center;
+  margin-top: -50px;
+}
+
+/* ===== セクション4 ==== */
+/* 斜めセクション */
+.section3 {
+  position: relative;
+}
+.section3::before {
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  border-width: 65px 100vw 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+/* セクション背景 */
+.section4 {
+  padding: 100px;
+  background-color: #fff;
+  height: 100%;
+}
+
+/* 段落 */ 
+.section4 p{
+  padding-top:50px ;
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+/* カード */
+.card-container2 {
+  display: grid; /* カードの横並び */
+  gap: 100px 120px; /* カード同士の隙間 縦方向 横方向 */
+  margin: 180px auto 0;
+  padding-top: 190px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card-item2 {
+  width:280px;
+  height:280px;
+  background:#fff;
+  border-radius:30px;
+  border: solid 1px #000;
+}
+
+
+.section4 a{
+  width:250px;
+    font-size:15px;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    margin-top:80px;
+    padding:15px 15px 15px;
+    color:#fff;
+    background-color:#53bba2;
+    border-radius: 23px;
+  }
+
+.section4 div{
+  display: flex;
+  justify-content:center;
+  margin-top: -50px;
+}
+
+
+
+/* ===== セクション5 ==== */
+/* 斜めセクション */
+.section4 {
+  position: relative;
+}
+.section4::before {
+  border-color: transparent #e3f2f0 transparent transparent;
+  border-style: solid;
+  border-width: 65px 100vw 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+/* セクション背景 */
+.section5 {
+  padding: 100px;
+  background-color: #e3f2f0;
+  height: 100%;
+}
+
+/* 段落 */ 
+.section5 p{
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+.section5 .section5-title{
+  padding-top: 50px;
+}
+
+/* 外部リンクボックス */ 
+.card-container3{
+  padding-top: 15px;
+}
+
+/* リストの箱 */ 
+.list-box{
+    width: 80%;   
+    height: 100px;
+    margin:30px auto;
+    border: 3px solid #53bba2;
+    border-radius: 100px;
+    background: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+
+.section5 .section5-title{
+  padding-top: 50px;
+}
+
+/* リストのロゴ */ 
+.list-box-img{
+  width:30%;  
+  padding-left: 30px;
+}
+
+.list-box-img2{
+  width:60%;  
+}
+
+/* リストの文字 */ 
+.txt-box{
+  font-size: 100%;
+  flex-wrap: wrap;
+
+}
+
+.txt-box a{
+  text-decoration: none;
+  color: #171918;
+}
+
+/* ===== フッター ==== */
+footer {
+  text-align: center;
+  background-color: #53bba2;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  padding: auto;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.sample{
+  display: flex;
+  justify-content: right;  /* 水平方向の中央寄せ */
+  align-items: center;      /* 垂直方向の中央寄せ */
+}
+
