@@ -7,7 +7,6 @@ PC @media screen and (min-width: 481px)　{ }
   src: url('/marugame.ttf') format('truetype');
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -447,11 +446,7 @@ nav a:hover {
       display: block;
       font-size: 0px;
     }
-
-  
   }
-
-  
 
   /* ボタン */
   .section1 a{
@@ -621,6 +616,13 @@ nav a:hover {
   width: 0;
 }
 
+@media screen and (max-width: 480px){
+  .section2::before {
+    border-width: 35px 100vw 0 0;
+  }
+
+}
+
 /* セクション背景 */
 .section3 {
   padding: 100px 2vw;
@@ -634,6 +636,18 @@ nav a:hover {
   text-align: center;
   letter-spacing: 8px;
   line-height: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 480px){
+  .section3 p{
+    padding-top: 80px;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 30px;
+    padding: 20px 10px;
+    font-size: 16px;
+  }
 }
 
 /* カード*/
@@ -731,6 +745,13 @@ nav a:hover {
   width: 0;
 }
 
+@media screen and (max-width: 480px){
+  .section3::before {
+    border-width: 35px 100vw 0 0;
+  }
+
+}
+
 /* セクション背景 */
 .section4 {
   padding: 100px 2vw;
@@ -744,6 +765,19 @@ nav a:hover {
   text-align: center;
   letter-spacing: 8px;
   line-height: 30px;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 480px){
+  .section4 p{
+    padding-top: 80px;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 30px;
+    padding: 20px 10px;
+    font-size: 16px;
+  }
 }
 
 /* カード */
@@ -814,6 +848,13 @@ nav a:hover {
   width: 0;
 }
 
+@media screen and (max-width: 480px){
+  .section4::before {
+    border-width: 35px 100vw 0 0;
+  }
+
+}
+
 /* セクション背景 */
 .section5 {
   padding: 100px 2vw;
@@ -829,8 +870,19 @@ nav a:hover {
   padding: 5px;
 }
 
+@media screen and (max-width: 480px){
+  .section5 p{
+    padding-top: 80px;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 30px;
+    padding: 20px 10px;
+    font-size: 16px;
+  }
+
 .section5 .section5-title{
   padding-top: 50px;
+}
 }
 
 /* 外部リンクボックス */ 
@@ -927,7 +979,3 @@ footer {
   justify-content: right;  /* 水平方向の中央寄せ */
   align-items: center;      /* 垂直方向の中央寄せ */
 }
-
-
-
-
