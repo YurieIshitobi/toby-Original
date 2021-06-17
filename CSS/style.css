@@ -2,29 +2,30 @@
 PC @media screen and (min-width: 481px)　{ }
  */
 
+ @font-face {
+  font-family: 'まるがめ本丸ゴシック-R';
+  src: url('/marugame.ttf') format('truetype');
+}
+
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-  font-family: "游ゴシック体";
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-weight: 500;
   color: #171918;
   font-size: 15px;
 }
-
-
-@media screen and (max-width: 480px){
-body{
-  font-family: "游ゴシック体";
-  color: #171918;
-  font-size: 12px;
-  text-align: left;
-  }}
 
 .span1{
   color: #f2a12c;
 }
 
+.sp{
+  display: none;
+}
 
 /* ===== ヘッダーのスタイル ===== */
 header{
@@ -95,14 +96,20 @@ nav a:hover {
 @media screen and (max-width: 480px){ 
 .container{
   display:none;
-}}
+}
+.top-logo{
+  width: 200px;
+  padding:50px;
+}
+
+
+}
 
   /* メニューのロゴ */
-@media screen and (min-width: 481px){ 
 .top-logo{
     width: 200px;
     padding:50px;
-}}
+}
 
 @media screen and (max-width: 480px){ 
   .top-logo{
@@ -112,13 +119,13 @@ nav a:hover {
   
 
 /* FV背景画像 */
-@media screen and (min-width: 481px){ 
+
 .top-image{
     background-image: url(/images/top-image.png);
     height: 800px;
     background-size: cover;
     background-position: center 50%;
-}}
+}
 
 @media screen and (max-width: 800px){
   .top-image{
@@ -130,14 +137,14 @@ nav a:hover {
 }}
 
 /* FVロゴ */
-@media screen and (min-width: 481px){ 
+
 .top-image img{
   margin: 0px auto;
   padding: 165px 0 70px;
   display: block;
   height: 200px;
   text-align: center;
-}}
+}
 
 @media screen and (max-width: 800px){
   .top-image img{
@@ -246,7 +253,7 @@ nav a:hover {
     font-size: 32px;
     text-align: center;
     font-family: "まるがめ本丸ゴシック-R";
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   @media screen and (max-width: 480px){
@@ -290,7 +297,6 @@ nav a:hover {
     }
   }
 
-
   .sub-title2:before { 
     display: inline-block;
     position: absolute;
@@ -320,7 +326,6 @@ nav a:hover {
       transform: translateX(-50%);
     }
   }
-
 
   .sub-title3:before { 
     display: inline-block;
@@ -352,7 +357,6 @@ nav a:hover {
     }
   }
 
-
   .sub-title4:before { 
     display: inline-block;
     position: absolute;
@@ -382,8 +386,7 @@ nav a:hover {
       transform: translateX(-50%);
     }
   }
-
-
+  
   .sub-title5:before { 
     display: inline-block;
     position: absolute;
@@ -392,7 +395,7 @@ nav a:hover {
     border-radius: 2px;
     background-color: #53bba2;
     content: '';
-    bottom: 46px;
+    bottom: -4px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -417,19 +420,38 @@ nav a:hover {
   /* ===== セクション1 ==== */
   /* バック背景 */
   .section1{
-    padding: 100px;
+    padding: 100px 2vw;
     background-color: #e3f2f0;
-    height: 100%;
   }
 
   /* 本文 */
   /*※後で一つの式に統一する！！*/
   .section1 p{
-      padding-top:50px ;
+      margin-top: 30px;
       text-align: center;
       letter-spacing: 8px;
       line-height: 30px;
   }
+
+  @media screen and (max-width: 480px){
+    .section1 p{
+      padding-top: 80px;
+      text-align: left;
+      letter-spacing: 0px;
+      line-height: 30px;
+      padding: 20px 10px;
+      font-size: 16px;
+    }
+
+    .sp{
+      display: block;
+      font-size: 0px;
+    }
+
+  
+  }
+
+  
 
   /* ボタン */
   .section1 a{
@@ -469,10 +491,18 @@ nav a:hover {
   width: 0;
 }
 
+@media screen and (max-width: 480px){
+  .section1::before {
+    border-width: 35px 100vw 0 0;
+  }
+
+}
+
+
 /* ===== セクション2 ==== */
 /* 背景 */
 .section2 {
-  padding: 100px;
+  padding: 100px 4.5vw;
   background-color: #fff;
   height: 100%;
 }
@@ -484,6 +514,7 @@ nav a:hover {
   letter-spacing: 8px;
   line-height: 30px;
 }
+
 
 .swiper-container{
   width: 100%;
@@ -553,18 +584,25 @@ nav a:hover {
   font-size: 30px;
 }
 
-
-@media screen and (min-width: 481px){
 .QA-img-new{
-  width: 40%;
-}
+  width: 30vw;
 }
 
 @media screen and (max-width: 480px){
-  .QA-img-new{
-    width: 80%;
+  .section2 p{
+    text-align: left;
+    letter-spacing: 0px;
   }
+
+  .QA-box{
+    padding: 20px 15px;
   }
+
+    .QA-img-new{
+      width: 60vw;
+  }
+
+}
 
 /* ===== セクション3 ==== */
 /* 斜めセクション */
@@ -585,7 +623,7 @@ nav a:hover {
 
 /* セクション背景 */
 .section3 {
-  padding: 100px;
+  padding: 100px 2vw;
   background-color: #e3f2f0;
   height: 100%;
 }
@@ -652,6 +690,30 @@ nav a:hover {
   margin-top: -50px;
 }
 
+
+@media screen and (max-width: 480px){
+  .card-container {
+    gap: 80px 30px; /* カード同士の隙間 縦方向 横方向 */
+  }
+  
+  .card-item {
+    width:150px;
+    height:150px;
+  }
+  
+  .card-img {
+    width:140px;  
+    height:140px;
+    padding-top: 15px;
+  }
+  
+  .comment{
+    width: 60px;
+  }
+
+
+}
+
 /* ===== セクション4 ==== */
 /* 斜めセクション */
 .section3 {
@@ -671,7 +733,7 @@ nav a:hover {
 
 /* セクション背景 */
 .section4 {
-  padding: 100px;
+  padding: 100px 2vw;
   background-color: #fff;
   height: 100%;
 }
@@ -723,6 +785,17 @@ nav a:hover {
 }
 
 
+@media screen and (max-width: 480px){
+  .card-container2 {
+    gap: 80px 30px; /* カード同士の隙間 縦方向 横方向 */
+  }
+
+  .card-item2 {
+    width:150px;
+    height:150px;
+  }
+
+}
 
 /* ===== セクション5 ==== */
 /* 斜めセクション */
@@ -743,7 +816,7 @@ nav a:hover {
 
 /* セクション背景 */
 .section5 {
-  padding: 100px;
+  padding: 100px 2vw;
   background-color: #e3f2f0;
   height: 100%;
 }
@@ -753,6 +826,7 @@ nav a:hover {
   text-align: center;
   letter-spacing: 8px;
   line-height: 30px;
+  padding: 5px;
 }
 
 .section5 .section5-title{
@@ -762,38 +836,34 @@ nav a:hover {
 /* 外部リンクボックス */ 
 .wrapper {
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(220, 255, 252);
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .button-flexbox {
   width: 60vw;
-  height: 30vh;
-  /* background-color: antiquewhite; */
+  padding: 50px;
 }
 
 .button-box {
-  width: 100%;
-  height: 40%;
-  border: 2px solid #53bba2(255, 139, 139);
+  width: 600px;
+  border: 2px solid #53bba2;
   box-sizing: border-box;
   border-radius: 100px;
-  margin: 20px 0;
+  margin: 20px auto;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
 }
 
 .div-box {
   width: 50%;
-  height: 100%;
-  /* background-color: rgb(245, 255, 158); */
 }
 
 .div-box img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
@@ -801,6 +871,43 @@ nav a:hover {
   display: flex;
   align-items: center;
   color: rgb(36, 36, 36);
+}
+
+.button-box img{
+  width: 50%;
+  margin-right: 5px;
+} 
+
+.button-box a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 480px){
+  .button-box {
+    width: 90%;
+    border: 2px solid #53bba2;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+  }
+  
+  .button-box img{
+    width: 30%;
+    margin-right: 5px;
+  } 
+
+  .button-box a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+  }
 }
 
 /* ===== フッター ==== */
@@ -820,4 +927,7 @@ footer {
   justify-content: right;  /* 水平方向の中央寄せ */
   align-items: center;      /* 垂直方向の中央寄せ */
 }
+
+
+
 
