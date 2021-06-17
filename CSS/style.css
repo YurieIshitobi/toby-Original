@@ -490,7 +490,6 @@ nav a:hover {
 }
 
 .QA-box{
-    width: 90%;
     margin: 40px auto;
     background: #fff;
     border-radius: 40px;
@@ -553,6 +552,19 @@ nav a:hover {
   color:#f2a12c;
   font-size: 30px;
 }
+
+
+@media screen and (min-width: 481px){
+.QA-img-new{
+  width: 40%;
+}
+}
+
+@media screen and (max-width: 480px){
+  .QA-img-new{
+    width: 80%;
+  }
+  }
 
 /* ===== セクション3 ==== */
 /* 斜めセクション */
@@ -748,48 +760,47 @@ nav a:hover {
 }
 
 /* 外部リンクボックス */ 
-.card-container3{
-  padding-top: 15px;
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(220, 255, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* リストの箱 */ 
-.list-box{
-    width: 80%;   
-    height: 100px;
-    margin:30px auto;
-    border: 3px solid #53bba2;
-    border-radius: 100px;
-    background: #fff;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    
+.button-flexbox {
+  width: 60vw;
+  height: 30vh;
+  /* background-color: antiquewhite; */
 }
 
-.section5 .section5-title{
-  padding-top: 50px;
+.button-box {
+  width: 100%;
+  height: 40%;
+  border: 2px solid #53bba2(255, 139, 139);
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin: 20px 0;
+  display: flex;
 }
 
-/* リストのロゴ */ 
-.list-box-img{
-  width:30%;  
-  padding-left: 30px;
+.div-box {
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(245, 255, 158); */
 }
 
-.list-box-img2{
-  width:60%;  
+.div-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* リストの文字 */ 
-.txt-box{
-  font-size: 100%;
-  flex-wrap: wrap;
-
-}
-
-.txt-box a{
-  text-decoration: none;
-  color: #171918;
+.text-box {
+  display: flex;
+  align-items: center;
+  color: rgb(36, 36, 36);
 }
 
 /* ===== フッター ==== */
