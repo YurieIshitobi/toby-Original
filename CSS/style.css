@@ -426,7 +426,7 @@ nav a:hover {
   /* 本文 */
   /*※後で一つの式に統一する！！*/
   .section1 p{
-      margin-top: 30px;
+      margin-top: 50px;
       text-align: center;
       letter-spacing: 8px;
       line-height: 30px;
@@ -440,6 +440,7 @@ nav a:hover {
       line-height: 30px;
       padding: 20px 10px;
       font-size: 16px;
+      margin-top: 30px;
     }
 
     .sp{
@@ -636,7 +637,6 @@ nav a:hover {
   text-align: center;
   letter-spacing: 8px;
   line-height: 30px;
-  margin-top: 30px;
 }
 
 @media screen and (max-width: 480px){
@@ -647,6 +647,7 @@ nav a:hover {
     line-height: 30px;
     padding: 20px 10px;
     font-size: 16px;
+    margin-top: 30px;
   }
 }
 
@@ -765,7 +766,6 @@ nav a:hover {
   text-align: center;
   letter-spacing: 8px;
   line-height: 30px;
-  margin-top: 30px;
 }
 
 
@@ -777,6 +777,7 @@ nav a:hover {
     line-height: 30px;
     padding: 20px 10px;
     font-size: 16px;
+    margin-top: 30px;
   }
 }
 
@@ -868,6 +869,7 @@ nav a:hover {
   letter-spacing: 8px;
   line-height: 30px;
   padding: 5px;
+  padding-bottom:50px ;
 }
 
 @media screen and (max-width: 480px){
