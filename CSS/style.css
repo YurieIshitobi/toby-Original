@@ -664,7 +664,6 @@ nav a:hover {
 /* カード*/
 .card-container {
   display: grid; /* カードの横並び */
-  gap: 100px 120px; /* カード同士の隙間 縦方向 横方向 */
   margin: 110px auto 0;
   text-align: center; /* カード内の中央寄せ */
   padding-top: 180px;
@@ -679,6 +678,7 @@ nav a:hover {
   background:#fff;
   border-radius:30px;
   position: relative;
+  margin: 100px 60px;
 }
 
 .card-img {
@@ -717,15 +717,13 @@ nav a:hover {
 
 
 @media screen and (max-width: 480px){
-  .card-container {
-    gap: 80px 30px; /* カード同士の隙間 縦方向 横方向 */
-  }
   
   .card-item {
     width:150px;
     height:150px;
+    margin: 90px 10px;
   }
-  
+
   .card-img {
     width:140px;  
     height:140px;
@@ -794,7 +792,6 @@ nav a:hover {
 /* カード */
 .card-container2 {
   display: grid; /* カードの横並び */
-  gap: 100px 120px; /* カード同士の隙間 縦方向 横方向 */
   margin: 180px auto 0;
   padding-top: 190px;
   padding-bottom: 50px;
@@ -807,6 +804,7 @@ nav a:hover {
   background:#fff;
   border-radius:30px;
   border: solid 1px #000;
+  margin: 100px 60px;
 }
 
 
@@ -838,6 +836,7 @@ nav a:hover {
   .card-item2 {
     width:150px;
     height:150px;
+    margin: 90px 10px;
   }
 
 }
