@@ -829,9 +829,6 @@ nav a:hover {
 
 
 @media screen and (max-width: 480px){
-  .card-container2 {
-    gap: 80px 30px; /* カード同士の隙間 縦方向 横方向 */
-  }
 
   .card-item2 {
     width:150px;
