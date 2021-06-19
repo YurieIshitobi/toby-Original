@@ -36,6 +36,10 @@ header{
     align-items: center;
     z-index:100;
 }
+.top-image h1{
+  font-family: "游ゴシック体";
+
+}
 
 @media screen and (max-width: 480px){
   header{
@@ -561,6 +565,12 @@ nav a:hover {
 }
 
 .QA-Ans-p{
+  font-size: 15px;
+  font-family: "游ゴシック体";
+  text-align: center;
+}
+
+.QA-Ans-txt p{
   font-size: 15px;
   font-family: "游ゴシック体";
   text-align: center;
